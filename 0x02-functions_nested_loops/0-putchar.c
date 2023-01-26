@@ -1,7 +1,7 @@
-#include "_putchar.c"
+#include "_putchar.h"
 
 /**
- * main - prints Holberton
+ * main - prints _putchar
  *
  * Description: prints _putchar
  *
