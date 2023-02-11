@@ -1,17 +1,21 @@
 #include "holberton.h"
+
 /**
- *_strcmp - function copies string
- *@s1: string one
- *@s2: string two
- *Return: new string
+ * _strncpy - function that copies a string
+ * @dest: destination char
+ * @src: source char
+ * @n: number of bytes from src
+ * Return: new string
  */
 
-int _strcmp(char *s1, char *s2)
+char *_strncpy(char *dest, char *src, int n)
 {
-	while (*s1 && *s2 && *s1 == *s2)
-	{
-		s1++;
-		s2++;
-	}
-	return (*s1 - *s2);
+	int i;
+
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+	for ( ; i < n; i++)
+		dest[i] = '\0';
+
+	return (dest);
 }
