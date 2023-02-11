@@ -8,22 +8,26 @@
 
 char *leet(char *s)
 {
-	int i;
+	char a[5] = {'A', 'E', 'O', 'T', 'L'};
+	char b[5] = {'4', '3', '0', '7', '1'};
+	int count1 = 0, count2 = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (str[count1])
 	{
-		if (s[i] == 'a' || s[i] == 'A')
-			s[i] = '4';
-		if (s[i] == 'e' || s[i] == 'E')
-			s[i] = '3';
-		if (s[i] == 'o' || s[i] == 'O')
-			s[i] = '0';
-		if (s[i] == 't' || s[i] == 'T')
-			s[i] = '7';
-		if (s[i] == 'l' || s[i] == 'L')
-			s[i] = '1';
-	}
+		count2 = 0;
 
-	return (s);
+		while (count2 < 5)
+		{
+			if (str[count1] == a[count2] || str[count1] - 32 == a[count2])
+			{
+				str[count1] = b[count2];
+			}
+
+			count2++;
+		}
+
+		count1++;
+	}
+return (str);
 }
 
