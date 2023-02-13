@@ -4,10 +4,10 @@
  * _strchr - function that locates a character in a string
  * @s: string
  * @c: character to search
- * Return: return if 0
+ * Return: please work
  */
 
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 	int i:
 
