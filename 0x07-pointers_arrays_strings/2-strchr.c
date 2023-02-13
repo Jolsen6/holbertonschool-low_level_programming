@@ -4,7 +4,7 @@
  * _strchr - function that locates a character in a string
  * @s: string
  * @c: character to search
- * Return: please work
+ * Return: return if 0
  */
 
 char *_strchr(char *s, char c)
