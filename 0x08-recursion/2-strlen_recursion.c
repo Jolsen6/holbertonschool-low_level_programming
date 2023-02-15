@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strlen_recursion - length of string
+ * _strlen_recursion calculate length of string
  * @s:string
  * Return:intx
  */
