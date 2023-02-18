@@ -10,8 +10,8 @@
   */
 int main(int argc, char *argv[])
 {
-	int j1 = 0;
-	int j2 = 0;
+	int var1 = 0;
+	int var2 = 0;
 	int sum = 0;
 
 	if (argc < 3)
@@ -21,8 +21,8 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		j1 = atoi(argv[1]);
-		j2 = atoi(argv[2];
+		var1 = atoi(argv[1]);
+		var2 = atoi(argv[2];
 		sum = j1 * j2;
 		printf("%d\n", sum);
 	}
