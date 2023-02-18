@@ -18,8 +18,8 @@ int i, d, sum = 0;
 		{
 			if (argv[i][d] < '0' || argv[i][d] > '9')
 			{
-				printf("Error\n");
-				return (1);
+			printf("Error\n");
+			return (1);
 			}
 		}	
 		sum += atoi(argv[i]);
