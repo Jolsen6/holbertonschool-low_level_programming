@@ -18,7 +18,7 @@ unsigned int i;
 array = malloc(sizeof(char) * size);
 	if (array == NULL)
 	return (NULL);
-		for (i = 0; index < size; i++)
+		for (i = 0; i < size; i++)
 		array[i] = c;
 	return (array);
 }
