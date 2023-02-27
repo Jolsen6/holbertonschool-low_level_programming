@@ -3,23 +3,28 @@
 #include <stdlib.h>
 
 /**
- * _calloc - allocates memory for an array using malloc
- * @nmemb: number of members
- * @size: size of thing passed
- * Return: null on failures
+ * *_calloc - allocates memory for an array using malloc
+ *@nmemb: number of members
+ *@size: size of memory
+ *Return: nothing
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-  unsigned int i;
-  char *memory;
 
-  if (nmemb == 0 || size == 0)
-    return (NULL);
-  memory = malloc(nmemb * size);
-  if (memory == NULL)
-    return (NULL);
-  for (i = 0; i < nmemb * size; i++)
-    *(memory + i) = 0;
-  return ((void *)memory);
+unsigned int i = 0;
+char *p;
+
+if (nmemb == 0 || size == 0)
+	return (NULL);
+
+p = malloc(nmemb * size);
+
+if (p == NULL)
+	return (NULL);
+
+for (i = 0; i < nmemb * size; i++)
+	p[i] = 0;
+
+return (p);
 }
