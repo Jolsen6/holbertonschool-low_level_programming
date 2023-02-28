@@ -1,11 +1,13 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+
 /**
- *array_range - the range of the array
- *@min: the min
- *@max: the max
- *Return: this time number
+ * array_range - creates an array of integers
+ * @min: ...
+ * @max: ...
+ *
+ * Return: integer value
  */
 
 int *array_range(int min, int max)
