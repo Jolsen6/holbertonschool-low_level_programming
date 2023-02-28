@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
- *array_range - range of the array
+ *array_range - the range of the array
  *@min: the min
  *@max: the max
- *Return: ayyyoooooooooooo
+ *Return: this time number
  */
 
 int *array_range(int min, int max)
