@@ -1,10 +1,10 @@
 #include "calc.h"
 
 /**
- *get_op_func - contain the function that selects the correct function 
+ *get_op_func - contain the function that selects the correct function
  *to perform the operation asked by the user
  *@s: operator passed as an argument
- *Return: pointer to the needed function or NULL if bad garbage doodoo
+ *Return: pointer to the needed function or NULL
  */
 
 int (*get_op_func(char *s))(int, int)
